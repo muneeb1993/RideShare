@@ -1,6 +1,5 @@
 Parse.initialize("EUXS2SHUYrUXfg2TpPTe1p6h8Au2Jm5VgKjZZfCF", "ertUipLEp6YApAS5HAdhoQZcPMO0D7TiEfg0oIGK");
 
-
 function signUp(){
 	var firstName = document.getElementById("firstName").value;
 	var lastName = document.getElementById("lastName").value;
@@ -99,9 +98,6 @@ function signUp(){
 		alert('Failed to create new object, with error code: ' + error.message);
 	  }
 	});
-	
-	
-	
 }
 
 function hasWhiteSpace(s) {
