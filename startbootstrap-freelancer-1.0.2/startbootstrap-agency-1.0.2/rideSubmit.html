@@ -174,10 +174,7 @@
 		};
 		
 		
-		var autocomplete = new google.maps.places.Autocomplete(input, options);
-		
-		alert("from listener initialized");
-		
+		var autocomplete = new google.maps.places.Autocomplete(input, options);		
 	}
 	
 	function initializeToListener() {
@@ -187,10 +184,6 @@
 		}
 		
 		var autocomplete = new google.maps.places.Autocomplete(input, options);
-		
-		alert("to listener initialized");
-		
-		
 	}
 
 	function calcRoute() {
@@ -210,8 +203,8 @@
 	}
 
 	google.maps.event.addDomListener(window, 'load', initialize);
-	google.maps.event.addDomListener(window, 'load', initializeToListener);
 	google.maps.event.addDomListener(window, 'load', initializeFromListener);
+	google.maps.event.addDomListener(window, 'load', initializeToListener);
 	</script>
 
 </body>
