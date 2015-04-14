@@ -89,32 +89,34 @@
 	<br>
 	<br>
 	
-	<div class="row">				
-		<div class="col-lg-12 text-center">
-			<h2>Submit Ride</h2>
-			<hr class="star-light">
-			
-				<!-- Content Row -->
-				<div class="row">  
-					<div class="col-md-6">
-						<form>	
-							<input class = "form-control" id = "from" type="text" placeholder="From" autofocus value = "" maxlength = 16>
-							<br>
-							<input class = "form-control" id = "to" type="text" placeholder="To" autofocus value = "" maxlength = 16>
-							<br>
-							<input class = "form-control" style="color:grey" type="date" id="date">
-							<br>
-							<input class = "form-control"style="color:grey" type="number" placeholder="Price" id="price">
-							<br>
-							<button type = "button" class="btn-primary" onclick="calcRoute()">Show Route</button>
-							<button type = "button" class="btn-primary" onclick="submitBtn()">Submit</button>
-						</form>
+	<div class="container">
+		<div class="row">				
+			<div class="col-lg-12 text-center">
+				<h2>Submit Ride</h2>
+				<hr class="star-light">
+				
+					<!-- Content Row -->
+					<div class="row">  
+						<div class="col-md-6">
+							<form>	
+								<input class = "form-control" id = "from" type="text" placeholder="From" autofocus value = "" maxlength = 16>
+								<br>
+								<input class = "form-control" id = "to" type="text" placeholder="To" autofocus value = "" maxlength = 16>
+								<br>
+								<input class = "form-control" style="color:grey" type="date" id="date">
+								<br>
+								<input class = "form-control"style="color:grey" type="number" placeholder="Price" id="price">
+								<br>
+								<button type = "button" class="btn-primary" onclick="calcRoute()">Show Route</button>
+								<button type = "button" class="btn-primary" onclick="submitBtn()">Submit</button>
+							</form>
+						</div>
+						<div class="col-md-6">
+							<div id="googleMap" style="width:500px;height:380px;"></div>
+						</div>
 					</div>
-					<div class="col-md-6">
-						<div id="googleMap" style="width:500px;height:380px;"></div>
-					</div>
-				</div>
-				<!-- /.row -->
+					<!-- /.row -->
+			</div>
 		</div>
 	</div>
 
