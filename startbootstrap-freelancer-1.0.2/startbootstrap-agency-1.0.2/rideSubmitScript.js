@@ -27,6 +27,10 @@ function submitBtn(){
 	var Ride = Parse.Object.extend("Ride");
 	var ride = new Ride();
 	
+	ride.set("firstName",currentUser.get("firstName"));
+	ride.set("lastName",currentUser.get("lastName"));
+	ride.set("email",currentUser.get("email"));
+	
 	ride.set("username",currentUser.get("username"));
 	ride.set("from",document.getElementById("from").value);
 	ride.set("to",document.getElementById("to").value);
@@ -47,6 +51,7 @@ function submitBtn(){
 	  success: function(results) {
 		// Execute any logic that should take place after the object is saved.
 		alert("succesful!");
+		window.open("index.html", "_self");
 		// alert('New object created with objectId: ' + userData.id);
 	  },
 	  error: function(results, error) {

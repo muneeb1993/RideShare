@@ -35,7 +35,6 @@ var currentUser = Parse.User.current();
 
 
 function logIn(){
-	alert("comes here");
 	var userName = document.getElementById("user").value;
 	var password = document.getElementById("pass").value;
 	Parse.User.logIn(userName, password, {
@@ -53,3 +52,6 @@ function logIn(){
 	});	
 }
 
+function signUp(){
+	window.open("signUp.html", "_self");
+}
