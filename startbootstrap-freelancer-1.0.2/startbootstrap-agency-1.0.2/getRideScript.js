@@ -28,7 +28,7 @@ query.find({
 		var cell0 = rowRace.insertCell(0);
 		var cell1 = rowRace.insertCell(1);
 		var cell2 = rowRace.insertCell(2);
-
+		
 		cell0.innerHTML = object.get("from");
 		cell1.innerHTML = object.get("to");
 		

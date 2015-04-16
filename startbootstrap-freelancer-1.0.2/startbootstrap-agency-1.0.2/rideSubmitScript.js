@@ -38,7 +38,6 @@ function submitBtn(){
 	
 	var ridePrice = document.getElementById("price").value;
 	var priceNumber = Number(ridePrice);
-	alert("Ride price: " + priceNumber);
 	// return;
 	ride.set("price",priceNumber); // Price
 	
@@ -49,7 +48,7 @@ function submitBtn(){
 	
 	ride.save(null, {
 	  success: function(results) {
-		alert("succesful!");
+		alert("Ride Saved");
 		window.open("index.html", "_self");
 	  },
 	  error: function(results, error) {
