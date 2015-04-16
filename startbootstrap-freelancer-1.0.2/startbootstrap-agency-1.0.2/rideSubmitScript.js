@@ -49,13 +49,10 @@ function submitBtn(){
 	
 	ride.save(null, {
 	  success: function(results) {
-		// Execute any logic that should take place after the object is saved.
 		alert("succesful!");
 		window.open("index.html", "_self");
-		// alert('New object created with objectId: ' + userData.id);
 	  },
 	  error: function(results, error) {
-		// Execute any logic that should take place if the save fails.
 		// error is a Parse.Error with an error code and message.
 		alert('Failed to create new object, with error code: ' + error.message);
 	  }

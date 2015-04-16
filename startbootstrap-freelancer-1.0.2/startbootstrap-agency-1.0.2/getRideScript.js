@@ -34,7 +34,8 @@ query.find({
 		
 		var newLink = document.createElement('a');
 		newLink.textContent = "Show Route";
-		newLink.href = "index.html";
+		newLink.href = "rideInfo.html?" + object.get("from") + "-" + object.get("to") + "-" + object.get("email") + "-" + object.get("firstName") + "-" + object.get("lastName") + "-" + object.get("price") + "-";
+			
 		cell2.appendChild(newLink);		
     }
   },
