@@ -71,11 +71,8 @@ function signUp(){
 	  }
 	});
 	
-	alert("Comes here1");
 	var UserData = Parse.Object.extend("UserData");
 	var userData = new UserData();
-	
-	alert("Comes here2");	
 	
 	userData.set("username",newUser);
 	userData.set("firstName", firstName);
@@ -84,7 +81,6 @@ function signUp(){
 	userData.set("ratingTotal", 0);
 	userData.set("ratingCount", 0);
 	userData.set("rating", 0);
-	 alert("Comes here3");
 	userData.save(null, {
 	  success: function(results) {
 		// Execute any logic that should take place after the object is saved.
