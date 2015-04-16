@@ -11,6 +11,7 @@ if (currentUser) {
 } 
 else{
 	//If not signed in
+	alert("You must be logged in to submit a ride.")
 }
 
 function submitBtn(){
