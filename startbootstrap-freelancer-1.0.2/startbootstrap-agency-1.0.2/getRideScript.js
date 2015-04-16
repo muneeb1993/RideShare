@@ -83,7 +83,12 @@ function searchRides(){
 
 			cell0.innerHTML = object.get("from");
 			cell1.innerHTML = object.get("to");
-			cell2.innerHTML = "Show Route";
+			
+			var newLink = document.createElement('a');
+			newLink.textContent = "More Info";
+			newLink.href = "rideInfo.html?" + object.get("from") + "-" + object.get("to") + "-" + object.get("email") + "-" + object.get("firstName") + "-" + object.get("lastName") + "-" + object.get("price") + "-";
+				
+			cell2.appendChild(newLink);
 		}
 	  },
 	  error: function(error) {
