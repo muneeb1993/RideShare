@@ -33,7 +33,7 @@ query.find({
 		cell1.innerHTML = object.get("to");
 		
 		var newLink = document.createElement('a');
-		newLink.textContent = "Show Route";
+		newLink.textContent = "Show Info";
 		newLink.href = "rideInfo.html?" + object.get("from") + "-" + object.get("to") + "-" + object.get("email") + "-" + object.get("firstName") + "-" + object.get("lastName") + "-" + object.get("price") + "-";
 			
 		cell2.appendChild(newLink);		
