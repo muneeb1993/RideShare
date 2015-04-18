@@ -37,7 +37,22 @@ function submitBtn(){
 	ride.set("to",document.getElementById("to").value);
 	ride.set("isDriver",true);
 	
+	if(document.getElementById("from").value == ""){
+		alert("From field can't be empty");
+		return;
+	}
+	
+	if(document.getElementById("to").value == ""){
+		alert("To field can't be empty");
+		return;
+	}
+	
+	
 	var ridePrice = document.getElementById("price").value;
+	if(ridePrice < 0){
+		alert("Price can't be negative");
+		return;
+	}
 	var priceNumber = Number(ridePrice);
 	// return;
 	ride.set("price",priceNumber); // Price

@@ -46,7 +46,6 @@ query.find({
 
 
 function searchRides(){
-	
 	var table = document.getElementById("rideResults");
 	//or use :  var table = document.all.tableid;
 	for(var i = table.rows.length - 1; i > 0; i--)
@@ -72,6 +71,12 @@ function searchRides(){
 	
 	query.find({
 	  success: function(results) {
+		
+		if(results.length == 0){
+			alert("No rides found");
+			return;
+		}
+		
 		// Do something with the returned Parse.Object values
 		for (var i = 0; i < results.length; i++) { 
 		  var rowRace = table.insertRow(table.length);

@@ -84,7 +84,7 @@ function signUp(){
 	userData.save(null, {
 	  success: function(results) {
 		// Execute any logic that should take place after the object is saved.
-		alert("succesful!");
+		alert("Successful!");
 		// alert('New object created with objectId: ' + userData.id);
 		window.open("index.html", "_self");
 	  },
